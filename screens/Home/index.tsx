@@ -1,6 +1,8 @@
 import { StatusBar } from "expo-status-bar";
 import { Button, Image, Text, TextInput, TouchableOpacity, View } from "react-native";
+import { ListTodo } from "../../components/List";
 import { styles } from "./styles";
+
 export function Home(){
   return (
     <View style={styles.container}>
@@ -16,10 +18,10 @@ export function Home(){
           placeholder="Adicione uma nova tarefa"
         />
         <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>+</Text>
+          <Text style={styles.buttonText}>⊕</Text>
         </TouchableOpacity>
       </View>
-      
+      <ListTodo />
     </View>
   )
 }

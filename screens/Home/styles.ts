@@ -12,15 +12,16 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#0D0D0D',
-    position: 'absolute',
+    position: 'absolute'
   },
   inputForm:{
     width: '100%',
     height: 54,
     flexDirection: 'row',
     justifyContent: 'center',
-    paddingBottom: 30,
-    position: 'relative',
+    position: 'absolute',
+    top: 140,
+    marginBottom: 32
   },
   inputCreateTask: {
     width: 271,
