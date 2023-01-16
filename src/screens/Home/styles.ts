@@ -1,5 +1,4 @@
-import { StyleSheet} from 'react-native';
-
+import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
   container: {
@@ -12,16 +11,15 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#0D0D0D',
-    position: 'absolute'
+    position: 'relative',
   },
-  inputForm:{
+  inputForm: {
     width: '100%',
     height: 54,
     flexDirection: 'row',
     justifyContent: 'center',
     position: 'absolute',
     top: 140,
-    marginBottom: 32
   },
   inputCreateTask: {
     width: 271,
@@ -39,8 +37,12 @@ export const styles = StyleSheet.create({
     backgroundColor: '#1E6F9F',
     borderRadius: 6,
   },
-  buttonText:{
+  buttonText: {
     color: '#FFFFFF',
     fontSize: 23,
+  },
+  listTodo: {
+    marginTop: 30,
+    padding: 32,
   },
 });
