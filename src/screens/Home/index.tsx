@@ -13,7 +13,7 @@ export function Home() {
       <StatusBar style="light" />
 
       <View style={styles.header}>
-        <Image source={require('../../assets/logo.png')} />
+        <Image source={require('../../../assets/logo.png')} />
         <View style={styles.inputForm}>
           <TextInput 
             style={styles.inputCreateTask}
