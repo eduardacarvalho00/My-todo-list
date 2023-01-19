@@ -15,16 +15,24 @@ interface ListTodoProps{
 }
 
 export function ListTodo({ data, onRemove, setTasks }: ListTodoProps) {
+  const numberTasks = () => {
+    if (data && data?.length < 0) {
+      return 0;
+    }
+    return data?.length;
+  };
+  
   return (
     <>
       <View style={styles.infoTasks}>
-        <InfoTaks text="Criadas" number={1} style={styles.textCriated} />
+        <InfoTaks text="Criadas" number={numberTasks()} style={styles.textCriated} />
         <InfoTaks text="Concluídas" number={0} style={styles.textDone} />
       </View>
 
       <View style={styles.divider} />
 
       <FlatList 
+        style={styles.flatList}
         data={data}
         keyExtractor={(item) => item}
         renderItem={({ item }) => (
@@ -36,7 +44,6 @@ export function ListTodo({ data, onRemove, setTasks }: ListTodoProps) {
             <Text style={styles.textEmpty}>Você ainda não tem tarefas cadastradas</Text>
             <Text style={styles.textEmpty2}>Crie tarefas e organize seus itens a fazer</Text>
           </View>
-          
         )}
       />
     </>

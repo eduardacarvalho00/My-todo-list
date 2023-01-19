@@ -30,4 +30,7 @@ export const styles = StyleSheet.create({
   textEmpty2: {
     color: '#808080',
   },
+  flatList: {
+    height: '70%',
+  },
 });

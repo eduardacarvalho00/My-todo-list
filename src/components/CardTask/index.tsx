@@ -13,15 +13,15 @@ interface CardTaskProps{
 export function CardTask({ title, onRemove }: CardTaskProps) {
   return (
     <View style={styles.cardTasks}>
-    <TouchableOpacity>
-      <View style={styles.selectTask} />
-    </TouchableOpacity>
+      <TouchableOpacity>
+        <View style={styles.selectTask} />
+      </TouchableOpacity>
 
-    <Text style={styles.textTask}>{title}</Text>
+      <Text style={styles.textTask}>{title}</Text>
 
-    <TouchableOpacity onPress={() => onRemove(title)}>
-      <Text>❌</Text>
-    </TouchableOpacity>
-  </View>
+      <TouchableOpacity onPress={() => onRemove(title)}>
+        <Text>❌</Text>
+      </TouchableOpacity>
+    </View>
   );
 }

@@ -5,7 +5,7 @@ import { styles } from './styles';
 
 interface InfoTasks{
   text: string;
-  number: number;
+  number: number | undefined
   style : StyleProp<TextStyle>
 }
 
