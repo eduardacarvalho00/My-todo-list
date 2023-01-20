@@ -16,7 +16,10 @@ export function Home() {
   function handleTaskAdd() {
     if (tasks.includes(tasksName)) {
       return Alert.alert('Tarefa ja adicionada', 'Não é possivel colocar duas tarefas iguais.');
+    } if (tasksName === '') {
+      return Alert.alert('Tarefa em branco', 'Não é possivel colocar uma tarefa em branco.');
     }
+
     setTasks((prevState) => [...prevState, tasksName]);
     setTasksName('');
   }
