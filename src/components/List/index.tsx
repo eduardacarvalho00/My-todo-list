@@ -29,8 +29,6 @@ export function ListTodo({ data, onRemove, setTasks }: ListTodoProps) {
         <InfoTaks text="Concluídas" number={0} style={styles.textDone} />
       </View>
 
-      <View style={styles.divider} />
-
       <FlatList 
         style={styles.flatList}
         data={data}
