@@ -23,6 +23,7 @@ export const styles = StyleSheet.create({
   },
   textTask: {
     fontSize: 15,
+    height: 40,
     marginLeft: 8,
     color: '#F2F2F2',
     flex: 1,
