@@ -38,7 +38,7 @@ export function ListTodo({ data, onRemove, setTasks }: ListTodoProps) {
         )}
         ListEmptyComponent={() => (
           <View style={styles.boxListEmpty}>
-            <Image source={require('../../../assets/clipboard.png')} />
+            <Image source={require('../../assets/clipboard.png')} />
             <Text style={styles.textEmpty}>Você ainda não tem tarefas cadastradas</Text>
             <Text style={styles.textEmpty2}>Crie tarefas e organize seus itens a fazer</Text>
           </View>
