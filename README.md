@@ -18,7 +18,7 @@ Execute os seguintes comandos no terminal da sua IDE:
 
 1 - Clonar o repositório:
 ```
- git clone https://github.com/eduardacarvalho00/imHere
+ git clone https://github.com/eduardacarvalho00/My-todo-list
 ```
 2 - Intalar as dependências do projeto:
 ```
